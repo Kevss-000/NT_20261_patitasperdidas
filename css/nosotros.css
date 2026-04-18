@@ -1,0 +1,382 @@
+/* CSS específico para la página Nosotros */
+
+body {
+    background-color: #000000 !important;
+    color: #ffffff;
+}
+
+/* Clases Roboto para Navbar */
+.navbar-roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.navbar-roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.navbar-roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.navbar-roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.navbar-roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.navbar-roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Personalizaciones del Navbar Principal */
+.navbar-nav .nav-link {
+    font-family: "Montserrat", sans-serif !important;
+    color: #333333 !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    padding: 0.25rem 0.75rem !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFB38A !important;
+}
+
+/* Primer navbar - contacto */
+nav.bg-dark a.text-white.text-decoration-none {
+    transition: color 0.3s ease;
+}
+
+nav.bg-dark a.text-white.text-decoration-none:hover {
+    color: #e9ecef !important;
+}
+
+/* 🔥 ICONO USUARIO AGREGADO (sin modificar nada) */
+.navbar .fa-user {
+    font-size: 1.35rem;
+    color: #333333;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+}
+
+.navbar .fa-user:hover {
+    color: #FFB38A;
+    transform: scale(1.15);
+}
+
+.navbar .d-flex {
+    min-width: 50px;
+    justify-content: flex-end;
+}
+
+/* Ajuste del botón del icono */
+#menu-toggle {
+    position: relative;
+    z-index: 3000;
+    margin-right: 10px; /* separa un poco del borde */
+    transition: opacity 0.15s ease;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100%;
+    background-color: #FFFDF7;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.1);
+    padding: 80px 20px 20px 20px; /* espacio arriba para el icono */
+    transition: right 0.3s ease;
+    z-index: 2000;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+/* Título */
+.sidebar h4 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Botones tipo hero */
+.sidebar a {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Botón principal (Iniciar sesión) */
+.sidebar a:first-of-type {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.sidebar a:first-of-type:hover {
+    background-color: #ff4b4b;
+}
+
+/* Botón secundario (Registrarse) */
+.sidebar a:last-of-type {
+    border: 2px solid #ff6b6b;
+    color: #ff6b6b;
+}
+
+.sidebar a:last-of-type:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.sidebar-header {
+    margin-bottom: 20px;
+}
+
+/* Sección Quiénes Somos */
+.quienes-somos-section {
+    padding: 60px 0;
+}
+
+.quienes-somos-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFB38A;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.quienes-somos-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Misión y Visión */
+.mision-vision-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mision-box,
+.vision-box {
+    padding: 25px;
+    border-left: 4px solid #FFB38A;
+    background-color: rgba(255, 179, 138, 0.05);
+    border-radius: 5px;
+}
+
+.mision-vision-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFB38A;
+    margin-bottom: 15px;
+}
+
+.mision-vision-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Sección Voluntarios */
+.voluntarios-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, rgba(255, 179, 138, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.voluntarios-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFB38A;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.voluntarios-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.voluntarios-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 30px 0;
+}
+
+.voluntarios-list li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.voluntarios-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #FFB38A;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.voluntarios-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-unete {
+    display: inline-block;
+    background-color: #FFB38A;
+    color: #000000;
+    padding: 15px 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.btn-unete:hover {
+    background-color: #FF9A6A;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(255, 179, 138, 0.3);
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    border-top: 3px solid #FFB38A;
+    padding: 50px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #FFB38A;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FFB38A;
+}
+
+.footer-divider {
+    border-color: #333333;
+    margin: 30px 0;
+}
+
+.footer-copyright {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
+    color: #999999;
+    margin: 0;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #FFB38A;
+    color: #000000;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.footer-social-link:hover {
+    background-color: #FF9A6A;
+    transform: translateY(-3px);
+}
