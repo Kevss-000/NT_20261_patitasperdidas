@@ -1,0 +1,750 @@
+/* Fuente Roboto para todo el documento */
+/* Fuente Roboto para todo el documento */
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    background-color: #FFFDF7;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Clases Roboto para Navbar */
+.navbar-roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.navbar-roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.navbar-roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.navbar-roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.navbar-roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.navbar-roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Personalizaciones del Navbar Principal */
+.navbar-nav .nav-link {
+    font-family: "Montserrat", sans-serif !important;
+    color: #333333 !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    padding: 0.25rem 0.75rem !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFB38A !important;
+}
+
+/* Primer navbar - contacto */
+nav.bg-dark a.text-white.text-decoration-none {
+    transition: color 0.3s ease;
+}
+
+nav.bg-dark a.text-white.text-decoration-none:hover {
+    color: #e9ecef !important;
+}
+
+/* Sección Hero */
+.hero-section {
+    padding: 60px 0 40px 0;
+}
+
+.hero-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.title-primary {
+    color: #FFB38A;
+    display: block;
+}
+
+.title-secondary {
+    color: #333333;
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.hero-description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+    color: #6B6B6B;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.hero-btn {
+    padding: 10px 25px;
+    font-size: 0.85rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary-hero {
+    background-color: #FFB38A;
+    color: #ffffff;
+}
+
+.btn-primary-hero:hover {
+    background-color: #FF9A6A;
+    transform: translateY(-2px);
+}
+
+.btn-secondary-hero {
+    background-color: transparent;
+    color: #FFB38A;
+    border: 2px solid #FFB38A;
+}
+
+.btn-secondary-hero:hover {
+    background-color: #FFB38A;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.hero-subtitle {
+    display: none;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image-img {
+    width: auto;
+    height: auto;
+    max-height: 2000px;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .title-secondary {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.85rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-image-img {
+        max-height: 600px;
+    }
+}
+
+/* 🔥 SECCIÓN ESTADÍSTICAS */
+.stats-section {
+    position: relative;
+    background-image: url('../img/perros-fondo.jpg'); /* cambia por tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Oscurecer fondo */
+.stats-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+}
+
+/* Curvas arriba y abajo */
+.stats-section::before,
+.stats-section::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: #f8f9fa; /* mismo color que tu body */
+    left: 0;
+    z-index: 2;
+}
+
+.stats-section::before {
+    top: 0;
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+}
+
+.stats-section::after {
+    bottom: 0;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+}
+
+/* Texto */
+.stats-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.stats-number {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.stats-text {
+    font-size: 1rem;
+    margin-top: -10px;
+}
+
+/* 🔥 ICONO USUARIO AGREGADO (sin modificar nada) */
+.navbar .fa-user {
+    font-size: 1.35rem;
+    color: #333333;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+}
+
+.navbar .fa-user:hover {
+    color: #FFB38A;
+    transform: scale(1.15);
+}
+
+.navbar .d-flex {
+    min-width: 50px;
+    justify-content: flex-end;
+}
+
+
+/* Ajuste del botón del icono */
+#menu-toggle {
+    position: relative;
+    z-index: 3000;
+    margin-right: 10px; /* separa un poco del borde */
+    transition: opacity 0.15s ease;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100%;
+    background-color: #FFFDF7;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.1);
+    padding: 30px 20px;
+    transition: right 0.3s ease;
+    z-index: 2000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar-header {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100%;
+    background-color: #FFFDF7;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.1);
+    padding: 80px 20px 20px 20px; /* espacio arriba para el icono */
+    transition: right 0.3s ease;
+    z-index: 2000;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+/* Título */
+.sidebar h4 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Botones tipo hero */
+.sidebar a {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Botón principal (Iniciar sesión) */
+.sidebar a:first-of-type {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.sidebar a:first-of-type:hover {
+    background-color: #ff4b4b;
+}
+
+/* Botón secundario (Registrarse) */
+.sidebar a:last-of-type {
+    border: 2px solid #ff6b6b;
+    color: #ff6b6b;
+}
+
+.sidebar a:last-of-type:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+/* 🔥 SECCIÓN INFORMACIÓN - PATITAS PERDIDAS */
+.info-section {
+    background-color: #FFFDF7;
+    padding: 40px 0 !important;
+}
+
+.info-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #333333;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.info-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    color: #6B6B6B;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.info-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFB38A;
+    line-height: 1.3;
+    margin-top: 25px;
+}
+
+@media (max-width: 992px) {
+    .info-title {
+        font-size: 1.3rem;
+    }
+
+    .info-text {
+        font-size: 0.85rem;
+    }
+
+    .info-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+/* Estilos independientes para la imagen de la sección info */
+.info-section-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-section-image-img {
+    width: auto;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    display: block;
+}
+
+.info-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+}
+
+.info-image-img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* 🔥 SECCIÓN DE APOYO Y DONACIONES */
+.support-section {
+    background: linear-gradient(135deg, #FFE5D9 0%, #FFF5F0 100%);
+    padding: 60px 0;
+    margin-top: 40px;
+}
+
+.support-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #333333;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.support-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.support-impact {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.95rem;
+    color: #DC3545;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* Tarjetas de apoyo */
+.support-card {
+    background-color: #FFFFFF;
+    border: 2px solid #FFB38A;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(255, 179, 138, 0.15);
+}
+
+.support-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255, 179, 138, 0.25);
+    border-color: #FF9A6A;
+}
+
+.support-card-icon {
+    font-size: 3rem;
+    color: #FFB38A;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.support-card:hover .support-card-icon {
+    color: #FF6B6B;
+    transform: scale(1.1);
+}
+
+.support-card-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.support-card-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    color: #6B6B6B;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.support-btn {
+    display: inline-block;
+    background-color: #FFB38A;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.support-btn:hover {
+    background-color: #FF9A6A;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(255, 154, 106, 0.3);
+}
+
+.support-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .support-section {
+        padding: 40px 0;
+    }
+
+    .support-title {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .support-description {
+        font-size: 0.95rem;
+    }
+
+    .support-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .support-title {
+        font-size: 1.3rem;
+    }
+
+    .support-description {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .support-card-icon {
+        font-size: 2.5rem;
+    }
+
+    .support-card-title {
+        font-size: 1rem;
+    }
+
+    .support-card-text {
+        font-size: 0.85rem;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    border-top: 3px solid #FFB38A;
+    padding: 50px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #FFB38A;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FFB38A;
+}
+
+.footer-divider {
+    border-color: #333333;
+    margin: 30px 0;
+}
+
+.footer-copyright {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
+    color: #999999;
+    margin: 0;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #FFB38A;
+    color: #000000;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.footer-social-link:hover {
+    background-color: #FF9A6A;
+    transform: translateY(-3px);
+}

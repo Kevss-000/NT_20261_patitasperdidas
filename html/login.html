@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso - Patitas Perdidas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FFFDF7;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* SECCIÓN DE INICIO */
+        .section-header-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #FFFDF7 0%, #FFE5D9 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-header-container::before {
+            content: "";
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 179, 138, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+            z-index: 0;
+        }
+
+        .section-header-container::after {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 179, 138, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            bottom: -50px;
+            left: -50px;
+            z-index: 0;
+        }
+
+        .section-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 600px;
+            padding: 40px 20px;
+        }
+
+        .section-icon {
+            font-size: 5rem;
+            color: #FFB38A;
+            margin-bottom: 30px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .section-title {
+            font-family: "Montserrat", sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #333333;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            font-family: "Roboto", sans-serif;
+            font-size: 1.2rem;
+            color: #6B6B6B;
+            margin-bottom: 15px;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .section-description {
+            font-family: "Roboto", sans-serif;
+            font-size: 1rem;
+            color: #888888;
+            margin-bottom: 40px;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        .section-highlight {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFB38A 0%, #FF9A6A 100%);
+            padding: 4px 12px;
+            border-radius: 20px;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(255, 179, 138, 0.3);
+        }
+
+        .section-cta {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-section-primary {
+            background-color: #FFB38A;
+            color: white;
+            padding: 14px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 179, 138, 0.3);
+        }
+
+        .btn-section-primary:hover {
+            background-color: #FF9A6A;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 179, 138, 0.4);
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-section-secondary {
+            background-color: transparent;
+            color: #FFB38A;
+            padding: 14px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            border: 2px solid #FFB38A;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-section-secondary:hover {
+            background-color: #FFB38A;
+            color: white;
+            transform: translateY(-3px);
+            text-decoration: none;
+        }
+
+        /* SECCIÓN DE FORMULARIOS */
+        .forms-container {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFFDF7;
+            overflow: hidden;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        .forms-container.active {
+            display: flex;
+        }
+
+        .form-wrapper {
+            width: 100%;
+            max-width: 380px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .form-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px 20px;
+            box-shadow: 0 8px 30px rgba(255, 179, 138, 0.15);
+            animation: slideIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            width: 100%;
+            max-width: 350px;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95) translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .form-title {
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #333333;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .form-subtitle {
+            font-family: "Roboto", sans-serif;
+            font-size: 0.8rem;
+            color: #888888;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            font-family: "Roboto", sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #E5E5E5;
+            border-radius: 8px;
+            font-family: "Roboto", sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            background-color: #F9F9F9;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #FFB38A;
+            background-color: #FFFDF7;
+            box-shadow: 0 0 0 3px rgba(255, 179, 138, 0.1);
+        }
+
+        .form-input::placeholder {
+            color: #AAAAAA;
+        }
+
+        .form-button {
+            width: 100%;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #FFB38A 0%, #FF9A6A 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 8px;
+            box-shadow: 0 4px 15px rgba(255, 179, 138, 0.3);
+        }
+
+        .form-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 179, 138, 0.4);
+        }
+
+        .form-button:active {
+            transform: translateY(0);
+        }
+
+        .form-divider {
+            margin: 20px 0;
+            text-align: center;
+            color: #CCCCCC;
+            font-size: 0.8rem;
+        }
+
+        .form-switch {
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-size: 0.8rem;
+            color: #666666;
+        }
+
+        .form-switch a {
+            color: #FFB38A;
+            text-decoration: none;
+            font-weight: 700;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .form-switch a:hover {
+            color: #FF9A6A;
+            text-decoration: underline;
+        }
+
+        /* DISEÑO LOGIN */
+        .login-badge {
+            display: inline-block;
+            background-color: #E8F5FF;
+            color: #0066CC;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-align: center;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        /* DISEÑO REGISTRO */
+        .register-badge {
+            display: inline-block;
+            background-color: #FFF5E8;
+            color: #FF9A6A;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-align: center;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        .register-two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        /* Mostrar/Ocultar contenido */
+        .form-content {
+            display: none;
+        }
+
+        .form-content.active {
+            display: block;
+            animation: slideInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideOutDown {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section-header-container {
+                min-height: auto;
+                padding: 60px 20px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-icon {
+                font-size: 3.5rem;
+            }
+
+            .form-card {
+                padding: 20px 15px;
+            }
+
+            .form-title {
+                font-size: 1.5rem;
+            }
+
+            .register-two-col {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- SECCIÓN DE FORMULARIOS - UN SOLO RECUADRO -->
+    <section class="forms-container">
+        <div class="form-wrapper">
+            <div class="form-card">
+                
+                <!-- LOGIN FORM -->
+                <div id="loginForm" class="form-content active">
+                    <div class="login-badge">
+                        <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                    </div>
+
+                    <h2 class="form-title">Bienvenido de Vuelta</h2>
+                    <p class="form-subtitle">Accede a tu cuenta</p>
+
+                    <form onsubmit="handleLogin(event)">
+                        <div class="form-group">
+                            <label class="form-label">Nombre de Usuario</label>
+                            <input type="text" class="form-input" placeholder="Tu nombre de usuario" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-input" placeholder="tu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Contraseña</label>
+                            <input type="password" class="form-input" placeholder="••••••••" required>
+                        </div>
+
+                        <button type="submit" class="form-button">
+                            <i class="fas fa-lock-open"></i> Iniciar Sesión
+                        </button>
+                    </form>
+
+                    <div class="form-divider">—— o ——</div>
+
+                    <p class="form-switch">
+                        ¿No tienes cuenta? <a onclick="switchForm('register')">Regístrate aquí</a>
+                    </p>
+                </div>
+
+                <!-- REGISTRO FORM -->
+                <div id="registerForm" class="form-content">
+                    <div class="register-badge">
+                        <i class="fas fa-user-plus"></i> Crear Cuenta
+                    </div>
+
+                    <h2 class="form-title">Únete a Nosotros</h2>
+                    <p class="form-subtitle">Completa tu registro</p>
+
+                    <form onsubmit="handleRegister(event)">
+                        <div class="form-group">
+                            <label class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-input" placeholder="Tu nombre completo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-input" placeholder="tu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Contraseña</label>
+                            <input type="password" class="form-input" placeholder="Mínimo 8 caracteres" required>
+                        </div>
+
+                        <div class="register-two-col">
+                            <div class="form-group">
+                                <label class="form-label">Ciudad</label>
+                                <input type="text" class="form-input" placeholder="Tu ciudad" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Teléfono</label>
+                                <input type="tel" class="form-input" placeholder="+1 234 567 890" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="form-button">
+                            <i class="fas fa-check-circle"></i> Registrarse
+                        </button>
+                    </form>
+
+                    <div class="form-divider">—— o ——</div>
+
+                    <p class="form-switch">
+                        ¿Ya tienes cuenta? <a onclick="switchForm('login')">Inicia sesión</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <script>
+        function switchForm(formType) {
+            // Ocultar todos los formularios
+            document.getElementById('loginForm').classList.remove('active');
+            document.getElementById('registerForm').classList.remove('active');
+
+            // Mostrar el formulario seleccionado
+            if (formType === 'login') {
+                document.getElementById('loginForm').classList.add('active');
+            } else if (formType === 'register') {
+                document.getElementById('registerForm').classList.add('active');
+            }
+        }
+
+        function handleLogin(event) {
+            event.preventDefault();
+            alert('Formulario de Login enviado');
+            // Aquí irá la lógica de login
+        }
+
+        function handleRegister(event) {
+            event.preventDefault();
+            alert('Formulario de Registro enviado');
+            // Aquí irá la lógica de registro
+        }
+    </script>
+</body>
+</html>
